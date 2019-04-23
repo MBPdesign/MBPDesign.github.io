@@ -32,7 +32,7 @@ svg {
 
 /* Black marble parallax */
 .parallaxBlack {
-    background-image: url(images/blackMarble.jpg);
+    background-image: url(Images/blackMarble.jpg);
     height: 40%;
     background-attachment: fixed;
     background-position: center;
