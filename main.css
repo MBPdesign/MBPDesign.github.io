@@ -1,0 +1,166 @@
+/* Gets rid of presets and all text is Lato */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Gets rid of blue underline for links */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* Styles the SVG */
+svg {
+    height: 200px;
+    width: 200px;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -330px;
+}
+
+/* Colors the SVG */
+#letterM {fill: gray;}
+
+#letterP {fill: gray;}
+
+#wordDesign {fill: white;}
+
+/* Black marble parallax */
+.parallaxBlack {
+    background-image: url(images/blackMarble.jpg);
+    height: 40%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styling for "MIRANDA POTVIN DESIGN" */
+h1 {
+    /* Styling text */
+    font-size: 25px;
+    letter-spacing: 9px;
+    line-height: 40px;
+    color: white;
+    text-shadow: 0px 0px 10px white, 0 0 25px white, 0 0 10px white;
+       
+    /* Positioning text */
+    text-align: center;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+/* White marble parallax */
+.parallaxWhite {
+    background-image: url(Images/whiteMarble.jpg);
+    height: 20%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+}
+
+/* Intro Parallax */
+.parallaxWhiteIntro {
+    background-image: url(Images/whiteMarble.jpg);
+    height: 20%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* spacing parallax */
+.parallaxWhiteS {
+    background-image: url(Images/whiteMarble.jpg);
+    height: 10%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
+/* Transparent gray boxes */
+.sections {
+    height: auto;
+    width: 75%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background-color: gray;
+    opacity:.8;
+    padding: 10px;
+}
+
+/* Styles "I AM A VISUAL DESIGNER */
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4px;
+    color: white; 
+ }
+
+/* Styles "ABOUT ME, PORTFOLIO, RESUME, and CONTACT ME" */
+h3 {
+   font-size: 20px;
+   font-weight: 400;
+   text-align: center;
+   letter-spacing: 4px;
+   color: white; 
+}
+
+/* Allows "ABOUT ME, PORTFOLIO, RESUME, and CONTACT ME" to pulse when 
+cursor is over text*/
+h3:hover {
+    animation-name: pulse;
+    animation-duration: .75s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+/* Styles paragraph text*/
+p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: -6px; 
+}
+
+/* Styles footnote div */
+.footnote {
+    height: auto;
+    width: auto;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/* Styles text inside footnote div */
+h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,131 @@
+/* Gets rid of presets and all text is Lato */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Gets rid of blue underline for links */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* Styles the SVG */
+svg {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+/* Colors the SVG */
+#letterM {fill: gray;}
+
+#letterP {fill: gray;}
+
+#wordDesign {fill: white;}
+
+/* Black marble parallax for the logo and title */
+.parallaxBlack {
+    background-image: url(/Images/blackMarble.jpg);
+    height: 20%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Black marble parallax for the sections */
+.parallaxBlackB {
+    background-image: url(/Images/blackMarble.jpg);
+    height: 20%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+h1 {
+    /* Styling text */
+    font-size: 15px;
+    letter-spacing: 9px;
+    line-height: 30px;
+    color: white;
+    text-shadow: 0px 0px 10px white, 0 0 25px white, 0 0 10px white;
+       
+    /* Positioning text */
+    text-align: center;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+h2 {
+    font-size: 25px;
+    letter-spacing: 9px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.sections {
+    height: auto;
+    width: 75%;
+    position: absolute;
+    background-color: white;
+    opacity:.8;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 9px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding-left: 10px; 
+}
+
+/* Styles footnote div */
+.footnote {
+    height: auto;
+    width: auto;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/* Styles text inside footnote div */
+h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 1px;
+}

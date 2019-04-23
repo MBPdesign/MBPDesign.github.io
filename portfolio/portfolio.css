@@ -1,0 +1,166 @@
+/* Gets rid of presets and all text is Lato */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: gray;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Gets rid of blue underline for links */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* Styles the SVG */
+svg {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+/* Colors the SVG */
+#letterM {fill: gray;}
+
+#letterP {fill: gray;}
+
+#wordDesign {fill: white;}
+
+/* Black marble parallax for the logo and title */
+.parallaxBlack {
+    background-image: url(/Images/blackMarble.jpg);
+    height: 25%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    /* Styling text */
+    font-size: 15px;
+    letter-spacing: 9px;
+    line-height: 30px;
+    color: white;
+    text-shadow: 0px 0px 10px white, 0 0 25px white, 0 0 10px white;
+       
+    /* Positioning text */
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* White marble parallax */
+.parallaxWhite {
+    background-image: url(/Images/whiteMarble.jpg);
+    height: 20%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    width: 75%;
+    padding: 10px;
+    background-color: gray;
+    opacity: 0.8;
+}
+
+h2 {
+    font-size: 25px;
+    letter-spacing: 9px;
+    line-height: 30px;
+    padding: 10px;
+    color: white;
+}
+
+.sections {
+    height: auto;
+    width: 50%;
+    position: absolute;
+    background-color: gray;
+    opacity:.8;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 9px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: white;
+}
+
+h4 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Center website */
+  .main {
+    margin: auto;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
