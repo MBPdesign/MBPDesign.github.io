@@ -1,0 +1,132 @@
+/* Gets rid of presets and all text is Lato */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: gray;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Gets rid of blue underline for links */
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  /* Styles the SVG */
+  svg {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  
+  /* Colors the SVG */
+  #letterM {fill: gray;}
+  
+  #letterP {fill: gray;}
+  
+  #wordDesign {fill: white;}
+  
+  /* Black marble parallax for the logo and title */
+  .parallaxBlack {
+    background-image: url(/Images/blackMarble.jpg);
+    height: 25%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /*styles "Miranda Potvin Design*/
+  h1 {
+    /* Styling text */
+    font-size: 15px;
+    letter-spacing: 9px;
+    line-height: 30px;
+    color: white;
+    text-shadow: 0px 0px 10px white, 0 0 25px white, 0 0 10px white;
+         
+    /* Positioning text */
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*gray transparent box for portfolio*/
+  .title {
+    position: absolute;
+    top: 40%;
+    width: 75%;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.8;
+  }
+  
+  /*Styles "Portfolio"*/
+  h2 {
+    font-size: 25px;
+    letter-spacing: 9px;
+    line-height: 30px;
+    padding: 10px;
+    color: black;
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: gray;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    background-image: url(/Images/whiteMarble.jpg);
+    padding: 20px;
+  }
+
+/* Styles footnote div */
+.footnote {
+    height: auto;
+    width: auto;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+/* Styles text inside footnote div */
+h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 1px;
+}

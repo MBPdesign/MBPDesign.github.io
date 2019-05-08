@@ -1,28 +1,28 @@
 /* Gets rid of presets and all text is Lato */
 body, html {
-    height: 100%;
-    margin: 0;
-    background-color: gray;
-    font-family: 'Lato', sans-serif;
+  height: 100%;
+  margin: 0;
+  background-color: gray;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Gets rid of blue underline for links */
 a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 /* Styles the SVG */
 svg {
-    height: 130px;
-    width: 130px;
-    position: absolute;
-    display: block;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
 }
 
 /* Colors the SVG */
@@ -34,133 +34,206 @@ svg {
 
 /* Black marble parallax for the logo and title */
 .parallaxBlack {
-    background-image: url(/Images/blackMarble.jpg);
-    height: 25%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(/Images/blackMarble.jpg);
+  height: 25%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/*styles "Miranda Potvin Design*/
 h1 {
-    /* Styling text */
-    font-size: 15px;
-    letter-spacing: 9px;
-    line-height: 30px;
-    color: white;
-    text-shadow: 0px 0px 10px white, 0 0 25px white, 0 0 10px white;
+  /* Styling text */
+  font-size: 15px;
+  letter-spacing: 9px;
+  line-height: 30px;
+  color: white;
+  text-shadow: 0px 0px 10px white, 0 0 25px white, 0 0 10px white;
        
-    /* Positioning text */
-    text-align: center;
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: -70px;
-    margin-left: auto;
-    margin-right: auto;
+  /* Positioning text */
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* White marble parallax */
 .parallaxWhite {
-    background-image: url(/Images/whiteMarble.jpg);
-    height: 20%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(/Images/whiteMarble.jpg);
+  height: 20%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/*gray transparent box for portfolio*/
 .title {
-    position: absolute;
-    top: 40%;
-    width: 75%;
-    padding: 10px;
-    background-color: gray;
-    opacity: 0.8;
+  position: absolute;
+  top: 40%;
+  width: 75%;
+  padding: 10px;
+  background-color: gray;
+  opacity: 0.8;
 }
 
+/*Styles "Portfolio"*/
 h2 {
-    font-size: 25px;
-    letter-spacing: 9px;
-    line-height: 30px;
-    padding: 10px;
-    color: white;
+  font-size: 25px;
+  letter-spacing: 9px;
+  line-height: 30px;
+  padding: 10px;
+  color: white;
 }
 
+/*gray transparent boxes*/
 .sections {
-    height: auto;
-    width: 50%;
-    position: absolute;
-    background-color: gray;
-    opacity:.8;
-    padding: 10px;
-}
-
-h3 {
-    font-size: 20px;
-    letter-spacing: 9px;
-    line-height: 30px;
-    padding-left: 10px;
-    color: white;
-}
-
-h4 {
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    padding-left: 10px;
-    color: black;
+  height: auto;
+  width: 50%;
+  position: absolute;
+  background-color: gray;
+  opacity:.8;
+  padding: 10px;
 }
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+.container {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.slider {
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
   
-  /* Center website */
-  .main {
-    margin: auto;
-  }
-  
-  .row {
-    margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
-  /* Create four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-  }
-  
-  /* Clear floats after rows */ 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > div {
+  flex-shrink: 0;
+  width: 500px;
+  height: 400px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slides > div:target {
+  transform: scale(0.8);
+}
+
+img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* styles small boxes at the top */
+.slider > a {
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/*Styles project titles*/
+h3 {
+  font-size: 20px;
+  letter-spacing: 9px;
+  line-height: 30px;
+  padding-left: 20px;
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  padding-left: 20px;
+  color: white;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 20px;
+  padding-left: 20px;
+  color: white;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+/* Styles footnote div */
+.footnote {
+  height: auto;
+  width: auto;
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+/* Styles text inside footnote div */
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  text-align: left;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+
